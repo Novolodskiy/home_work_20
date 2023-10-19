@@ -5,6 +5,7 @@ from endpoints.post_posts import PostPosts
 from endpoints.delete_posts_id import DeletePost
 from endpoints.get_posts import GetPosts
 from endpoints.get_posts_id import GetPostId
+from endpoints.put_posts_id import PutPostId
 
 
 def random_str(len_string):
@@ -30,6 +31,10 @@ def get_posts():
 @pytest.fixture()
 def get_post_id():
     return GetPostId()
+
+@pytest.fixture()
+def put_post():
+    return PutPostId()
 
 
 @pytest.fixture()
