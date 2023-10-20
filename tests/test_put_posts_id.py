@@ -1,4 +1,4 @@
-def test_put_post_id(create_test_date, create_post, put_post, get_post_id, delete_post):
+def test_put_post_id(create_test_date, create_post, put_post, delete_post):
     test_date = create_post.post_posts(create_test_date)
     put_post.put_posts_id(create_test_date, test_date["id"])
     put_post.check_response_status_is_ok()
